@@ -9,7 +9,12 @@ public class Main {
         ITelephone timsPhone;
         timsPhone = new DeskPhone(12345);
         timsPhone.powerOn();
-        timsPhone.callPhone(123456);
+        timsPhone.callPhone(12345);
+        timsPhone.answer();
+
+        timsPhone = new MobilePhone(24231);
+        timsPhone.powerOn();
+        timsPhone.callPhone(24231);
         timsPhone.answer();
     }
 }
