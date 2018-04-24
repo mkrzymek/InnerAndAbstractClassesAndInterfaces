@@ -1,5 +1,7 @@
 package com.timbuchalka;
 
+import com.sun.deploy.pings.Pings;
+
 import javax.sound.midi.Soundbank;
 import java.sql.SQLOutput;
 import java.util.ArrayList;
@@ -142,10 +144,6 @@ public class Main {
             }
         });
         listen();
-
-
-
-
     }
 
     private static void listen() {
@@ -165,12 +163,30 @@ public class Main {
     }
 
 
+    private static void abstractClasses() {
+
+        Dog dog = new Dog("Yorkie");
+        dog.breath();
+        dog.eat();
+
+        Bird bird = new Parrot("Australian ringneck");
+        bird.breath();
+        bird.eat();
+        bird.fly();
+
+        Penguin penguin = new Penguin("Emperor");
+        penguin.fly();
+    }
+
 
 
     public static void main(String[] args) {
 
 //        interfaces();
 //        interfaceChallenge();
-        innerClass();
+//        innerClass();
+        abstractClasses();
+
     }
+
 }
